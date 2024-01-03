@@ -1,21 +1,39 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
     <br><br><br>
     <div>
-        Conputed
+        - Conputed -<br>
         ========================================<br><br>
+        {{ user.first_name }} {{ user.last_name }}
+        {{ fullName }}
+        
     </div>
 </template>
 
 <script>
     export default {
+    name:'app',
     data() {
         return {
+            user: {
+                first_Name: 'Jon',
+                last_Name: 'Snow',
+            }
         }
     },
 
+    computed: {
+        fullName () {
+            return `${this.user.first_Name} ${this.user.last_Name}`
+        },
+    },
+
     methods: {
-    }
-    }
+        click() {
+            console.log(this.user);
+        }
+    },
+}
 </script>
 
 <style>
