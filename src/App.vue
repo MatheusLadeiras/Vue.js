@@ -10,18 +10,22 @@
   <img alt="Vue logo" src="./assets/logo.png">
   <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
   <!--<TwoWayDataBindingVue />-->
-  <Events />
+  <!--<Events />
   <Computed />
-  <Observers />
+  <Observers />-->
+  <LifeCicle />
+  <Slot />
 </template> 
 
 <script>
 //import HelloWorld from './components/HelloWorld.vue';
 import TheHeader from './components/TheHeader';
 //import TwoWayDataBindingVue from './components/TwoWayDataBinding';
-import Events from './components/Events';
-import Computed from './components/Computed';
-import Observers from './components/Observers';
+//import Events from './components/Events';
+//import Computed from './components/Computed';
+//import Observers from './components/Observers';
+import LifeCicle from './components/LifeCicle';
+import Slot from './components/Slot';
 
 export default {
 name: 'App',
@@ -30,9 +34,11 @@ components: {
   //HelloWorld,
   TheHeader,
   //TwoWayDataBindingVue,
-  Events,
-  Computed,
-  Observers
+  //Events,
+  //Computed,
+  //Observers,
+  LifeCicle,
+  Slot
 },
 data() {
   return {
