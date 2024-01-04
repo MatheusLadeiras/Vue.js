@@ -14,7 +14,12 @@
   <Computed />
   <Observers />-->
   <LifeCicle />
-  <Slot />
+  <Slots />
+  <Slots>
+    <template v-slot:title>Home</template>
+    <template v-slot:description>odnsfu osudnfjwçpe oaskdn poqednu qufenpo upaounf</template>
+    aaaaaaaaaaaaaaaa
+  </Slots>
 </template> 
 
 <script>
@@ -25,7 +30,7 @@ import TheHeader from './components/TheHeader';
 //import Computed from './components/Computed';
 //import Observers from './components/Observers';
 import LifeCicle from './components/LifeCicle';
-import Slot from './components/Slot';
+import Slots from './components/Slots';
 
 export default {
 name: 'App',
@@ -38,7 +43,7 @@ components: {
   //Computed,
   //Observers,
   LifeCicle,
-  Slot
+  Slots,
 },
 data() {
   return {
