@@ -1,16 +1,19 @@
 <template>
     <br><br><br>
     <div>
-        - Slot -<br>
+        - Slots -<br>
         ========================================<br><br>
-
-        aaaaaaaaaa
-        
+        <h1 v-if="$slots.title" class="title"><slot name="title" /></h1>
+        <slot name="description"/>
+        <slot/>
     </div>
 </template>
 
 <script>
     export default {
+    mounted() {
+        console.log(this.$slots.description);
+    }, 
     name:'app',
     data() {
         return {
